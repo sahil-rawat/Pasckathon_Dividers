@@ -1,0 +1,56 @@
+name: qrcodescanner
+description: A new Flutter application.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons:
+  qrscan:
+  url_launcher:
+  flutter_linkify:
+  intl:
+  animated_widgets:
+  provider:
+  flutter_auth_buttons:
+  animated_text_kit:
+  firebase_core:
+  firebase_auth:
+  cloud_firestore:
+  google_sign_in:
+  flutter_icons:
+  rflutter_alert:
+  slimy_card:
+  font_awesome_flutter:
+  highlight_text:
+  avatar_glow:
+  speech_recognition:
+  geolocator:
+  geoflutterfire:
+  time_formatter:
+  timer_count_down:
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+
+  uses-material-design: true
+  assets:
+    - images/logo.png
+    - images/Crowd.jpg
+    - images/How.jpg
+    - images/Why.jpg
+    - images/cop.jpg
+
+

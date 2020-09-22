@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "278969381813",
+    "firebase_url": "https://ibm-hack-311f5.firebaseio.com",
+    "project_id": "ibm-hack-311f5",
+    "storage_bucket": "ibm-hack-311f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278969381813:android:8f346588e4188ee7ae1ffc",
+        "android_client_info": {
+          "package_name": "com.siddhant.qrcodescanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278969381813-ike8gdjnq3grbm9g7r4j0l2e8uhmna0a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHWyfwO8z2Ka-aLSFbFeOAa30rJHFvjzk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "278969381813-ike8gdjnq3grbm9g7r4j0l2e8uhmna0a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
