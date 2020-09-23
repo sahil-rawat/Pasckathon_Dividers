@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "355743175109",
+    "firebase_url": "https://ibmhack-bb72a.firebaseio.com",
+    "project_id": "ibmhack-bb72a",
+    "storage_bucket": "ibmhack-bb72a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:355743175109:android:f8c9b22c63e728c60ebbac",
+        "android_client_info": {
+          "package_name": "com.example.ibmhack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "355743175109-0o65v93lpngg94ig8ri8m2shoqsiupqe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ibmhack",
+            "certificate_hash": "f2f478b83a7073354fe0d0889f0e6a73e852ef8c"
+          }
+        },
+        {
+          "client_id": "355743175109-bhf3hoscq8fqiap9nhaiv94scs4216nc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAdCjrgvr17cuMSDg4xY8FGJgAqkK7DgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "355743175109-bhf3hoscq8fqiap9nhaiv94scs4216nc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
