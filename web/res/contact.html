@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="img/fav.png">
+	<meta name="description" content="">
+	<meta charset="UTF-8">
+	<title>Contact</title>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+	<script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+
+	
+	
+
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+	<!-- start header Area -->
+	
+	<header id="header">
+		<div class="container main-menu">
+			<div class="row align-items-center justify-content-between d-flex">
+				<div id="logo">
+					<a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+				</div>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<li class="menu-active"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li ><a href="form.html">Can i go out</a>
+						</li>
+						<li ><a href="analysis">Dashboard</a>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<!-- start banner Area -->
+	<section class="banner-area">
+		<div class="container">
+			<div class="row banner-content">
+				<div class="col-lg-12 d-flex align-items-center justify-content-between">
+					<div class="left-part">
+						<h1>
+							Contact Us
+						</h1>
+						<p>
+							Feel Free to reach out to us.<br>Mail us at the address given below or fill out the contact form.
+						</p>
+					</div>
+					<div class="right-part">
+						<a href="index.html">home</a>
+						<span class="fa fa-caret-right"></span>
+						<a href="contact.html">contact</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<!-- End banner Area -->
+
+	<!-- Start contact-page Area -->
+	<section class="contact-page-area section-gap">
+		<div class="container">
+			<div class="row">
+				<div id="map1"class="map-wrap" style="width:100%; height: 445px;"></div>
+
+
+
+				<script>
+					mapboxgl.accessToken = 'pk.eyJ1Ijoic2FoaWwtcmF3YXQiLCJhIjoiY2thcXljNmU5MDR0dTJ3bnFnNWh6ZzAxMSJ9.fU2dUWqciOyTrp4rKp8Iiw';
+					const map = new mapboxgl.Map({
+						container: document.getElementById("map1"),
+						style: 'mapbox://styles/mapbox/streets-v11', 
+						center: [76.4024,27.9614], 
+						zoom: 12
+					});
+
+					var marker = new mapboxgl.Marker()
+					.setLngLat([76.4024,27.9614])
+					.setPopup(new mapboxgl.Popup().setHTML("<h3>TravelSolutions</h3>"))
+					.addTo(map);
+				</script>
+
+
+
+
+				<div class="col-lg-4 d-flex flex-column address-wrap">
+					<div class="single-contact-address d-flex flex-row">
+						<div class="icon">
+							<span class="lnr lnr-home"></span>
+						</div>
+						<div class="contact-details">
+							<h5>Neemrana, India</h5>
+							<p>NIIT University Neemrana</p>
+						</div>
+					</div>
+					<div class="single-contact-address d-flex flex-row">
+						<div class="icon">
+							<span class="lnr lnr-envelope"></span>
+						</div>
+						<div class="contact-details">
+							<h5>teamdividers101@gmail.com.com</h5>
+							<p>Send us your query anytime!</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<form class="form-area " id="myForm" action="/contact" method="post" class="contact-form text-right">
+						<div class="row">
+							<div class="col-lg-6 form-group">
+								<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'"
+								 class="common-input mb-20 form-control" required="" type="text" id="name_c">
+
+								<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control"
+								 required="" type="email" id="mail_c">
+
+								<input name="subject" placeholder="Enter your subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your subject'"
+								 class="common-input mb-20 form-control" required="" type="text">
+							</div>
+							<div class="col-lg-6 form-group">
+								<textarea class="common-textarea form-control" name="message" placeholder="Messege" onfocus="this.placeholder = ''"
+								 onblur="this.placeholder = 'Messege'" required=""></textarea >
+							</div>
+							<div class="col-lg-12 d-flex justify-content-between">
+								<div class="alert-msg" style="text-align: left;"></div>
+								<button class="primary-btn" type="submit">Send Message</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End contact-page Area -->
+
+	<!-- Start Footer Area -->
+	<footer class="footer-area section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Top Products</h4>
+					<ul>
+						<li><a href="index.html#users">User App</a></li>
+						<li><a href="index.html#authority">App for Authorities</a></li>
+						<li><a href="index.html#screens">Featured Screens</a></li>
+						<li><a href="https://github.com/SmartPracticeschool/SBSPS-Challenge-2664-Smart-Way-to-Travel-Post-Covid-19">Our Github</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Quick Links</h4>
+					<ul>
+						<li><a href="index.htmlindex.html">Home</a></li>
+						<li><a href="analysis">Dashboard</a></li>
+						<li><a href="form.html">Can I Go Out</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Features</h4>
+					<ul>
+						<li><a href="index.html#feature">3 Days Alloted</a></li>
+						<li><a href="index.html#feature">QR Code Verification</a></li>
+						<li><a href="index.html#feature">Penalty Charges</a></li>
+						<li><a href="index.html#video">View Video</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Meet Us</h4>
+					<ul>
+						<li><a href="index.html#ninad">Ninad Kanchan</a></li>
+						<li><a href="index.html#siddhant">Siddhant Sharma</a></li>
+						<li><a href="index.html#sahil">Sahil Singh Rawat</a></li>
+						<li><a href="index.html#yukta">Yukta Sharma</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="footer-bottom row align-items-center">
+				
+				<div class="col-lg-6 col-md-6 social-link">
+					<div class="download-button d-flex flex-row justify-content-end">
+						<div class="buttons gray flex-row d-flex">
+							<i class="fa fa-android" aria-hidden="true"></i>
+							<div class="desc">
+								<a href="https://drive.google.com/file/d/1ukMEBiFWQMxK7HGE8KJahalkouhW27mI/view?usp=sharing">
+									<p>
+										<span>Available</span> <br>
+										For Android
+									</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer Area -->
+
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="js/tilt.jquery.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/owl-carousel-thumb.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	
+	<script src="js/main.js"></script>
+</body>
+
+</html>

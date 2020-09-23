@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="img/fav.png">
+	<meta name="description" content="">
+	<meta charset="UTF-8">
+	<title>About</title>
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main_f.css">
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script>
+		function c(){
+			document.getElementById("name_1").value=""
+			document.getElementById("a_no").value=""
+		}
+	</script>
+	<script >
+		function validateForm(){
+			var x = document.getElementById("name_1").value
+			var y = document.getElementById("a_no").value
+
+			var regex = /^[a-zA-Z ]{1,30}$/;
+			var aadharno = /^\d{12}$/;
+
+			if (regex.test(x)) {
+				if(aadharno.test(y)){
+					return true
+				}
+				else{
+					alert("Enter a Valid aadhar no.");
+					return false;
+				}
+			}
+			else {
+				alert("Enter Valid name");
+				return false;
+			}
+			
+		}
+	</script>
+</head>
+
+<body onload="c()">
+	<!-- start header Area -->
+	<header id="header">
+		<div class="container main-menu">
+			<div class="row align-items-center justify-content-between d-flex">
+				<div id="logo">
+					<a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+				</div>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<li class="menu-active"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li ><a href="form.html">Can i go out</a>
+						</li>
+						<li ><a href="analysis">Dashboard</a>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	
+
+	
+	<!-- Start feature Area -->
+	<section class="banner-area">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="wrap-login100">
+				<form class="login100-form validate-form" onsubmit="return validateForm()" action="/check" method="post">
+					<span class="login100-form-title p-b-26">
+						Welcome
+					</span>
+					<span class="login100-form-text p-b-26">
+						Check the days you are allowed to move out
+					</span>
+
+					<div class="wrap-input100">
+						<input class="input100" type="text" id="name_1" name="name" placeholder="Enter your name" required="">
+					</div>
+
+					<div class="wrap-input100">
+						<input class="input100" type="text" id="a_no" name="aadhar" placeholder="Enter your Aadhar No." required="">
+						
+					</div>
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button  class="login100-form-btn">
+								Check
+							</button>
+						</div>
+					</div>
+				</form>
+
+			</div>
+			</div>
+		</div>
+	</section>
+	<!-- End feature Area -->
+
+	
+
+	<!-- Start Footer Area -->
+	<footer class="footer-area section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Top Products</h4>
+					<ul>
+						<li><a href="index.html#users">User App</a></li>
+						<li><a href="index.html#authority">App for Authorities</a></li>
+						<li><a href="index.html#screens">Featured Screens</a></li>
+						<li><a href="https://github.com/SmartPracticeschool/SBSPS-Challenge-2664-Smart-Way-to-Travel-Post-Covid-19">Our Github</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Quick Links</h4>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="analysis">Dashboard</a></li>
+						<li><a href="form.html">Can I Go Out</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Features</h4>
+					<ul>
+						<li><a href="index.html#feature">3 Days Alloted</a></li>
+						<li><a href="index.html#feature">QR Code Verification</a></li>
+						<li><a href="index.html#feature">Penalty Charges</a></li>
+						<li><a href="index.html#video">View Video</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Meet Us</h4>
+					<ul>
+						<li><a href="index.html#ninad">Ninad Kanchan</a></li>
+						<li><a href="index.html#siddhant">Siddhant Sharma</a></li>
+						<li><a href="index.html#sahil">Sahil Singh Rawat</a></li>
+						<li><a href="index.html#yukta">Yukta Sharma</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="footer-bottom row align-items-center">
+				<div class="col-lg-6 col-md-6 social-link">
+					<div class="download-button d-flex flex-row justify-content-end">
+						<div class="buttons gray flex-row d-flex">
+							<i class="fa fa-android" aria-hidden="true"></i>
+							<div class="desc">
+								<a href="https://drive.google.com/file/d/1ukMEBiFWQMxK7HGE8KJahalkouhW27mI/view?usp=sharing">
+									<p>
+										<span>Available</span> <br>
+										For Android
+									</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer Area -->
+
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="js/tilt.jquery.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/owl-carousel-thumb.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	
+	<script src="js/main.js"></script>
+</body>
+
+</html>
